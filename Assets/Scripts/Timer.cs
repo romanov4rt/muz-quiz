@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour
@@ -10,7 +8,7 @@ public class Timer : MonoBehaviour
     public bool loadNextQuestion;
     public float fillFraction;
     public bool isAnsweringQuestion;
-    
+
     float timerValue;
 
     void Update()
@@ -27,9 +25,9 @@ public class Timer : MonoBehaviour
     {
         timerValue -= Time.deltaTime;
 
-        if(isAnsweringQuestion)
+        if (isAnsweringQuestion)
         {
-            if(timerValue > 0)
+            if (timerValue > 0)
             {
                 fillFraction = timerValue / timeToCompleteQuestion;
             }
@@ -41,7 +39,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            if(timerValue > 0)
+            if (timerValue > 0)
             {
                 fillFraction = timerValue / timeToShowCorrectAnswer;
             }
