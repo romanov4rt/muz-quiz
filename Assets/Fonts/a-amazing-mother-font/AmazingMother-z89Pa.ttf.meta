@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4fc8feb840ed62243bf92de86bd8fbda
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - a Amazing Mother
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 21196e23b53cc854082549d398dd1c8c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

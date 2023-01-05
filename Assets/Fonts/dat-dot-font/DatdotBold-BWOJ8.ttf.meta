@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1b54bf2edba81034c9fed7467b2525be
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - DatDot
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e67c62841d246034b8426b912acba769, type: 3}
+  - {fileID: 12800000, guid: 6282bd9d34b6b0742bbb051dfa29d0e1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
