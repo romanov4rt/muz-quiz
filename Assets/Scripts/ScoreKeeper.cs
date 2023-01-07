@@ -2,8 +2,17 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    int correctAnswers = 0;
-    int questionsSeen = 0;
+    public int correctAnswers = 0;
+    int _questionsSeen = 0;
+    public int mCA;
+
+    private void Update()
+    {
+        if (PlayerPrefs.HasKey("high"))
+        {
+            mCA = PlayerPrefs.GetInt("high");
+        }
+    }
 
     public int GetCorrectAnswers()
     {
@@ -17,16 +26,27 @@ public class ScoreKeeper : MonoBehaviour
 
     public int GetQuestionSeen()
     {
-        return questionsSeen;
+        return _questionsSeen;
     }
 
     public void IncrementQuestionsSeen()
     {
-        questionsSeen++;
+        _questionsSeen++;
     }
 
     public int CalculateScore()
     {
-        return Mathf.RoundToInt(correctAnswers / (float)questionsSeen * 100);
+        return correctAnswers;
+    }
+
+    public int MaxCorrectAnswers()
+    {
+        if (correctAnswers > mCA)
+        {
+            PlayerPrefs.SetInt("high", correctAnswers);
+            PlayerPrefs.Save();
+        }
+        return PlayerPrefs.GetInt("high");
     }
 }
+

@@ -33,4 +33,24 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void OnScoreLevel()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void OnPlayLevel()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void OnMenuLevel()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
